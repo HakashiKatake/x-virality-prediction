@@ -1,0 +1,124 @@
+{
+  "ptc_dist": {
+    "min": 0.0,
+    "max": 11494.0,
+    "mean": 624.1368573270817,
+    "median": 1.0,
+    "std": 1865.4549267632442,
+    "25%": 0.0,
+    "50%": 1.0,
+    "75%": 30.0,
+    "90%": 1866.8000000000175,
+    "95%": 5038.0,
+    "99%": 9896.579999999987
+  },
+  "ptc_groups": [
+    {
+      "Group": "0-100",
+      "N": 129238,
+      "Mean_Eng": 14.725011219610332,
+      "Median_Eng": 1.0,
+      "Viral_Rate": 0.1137513734350578,
+      "Mean_Followers": 91495.48728702085,
+      "Mean_Following": 1214.1811618873705,
+      "Verified_Pct": 0.09480957613085934
+    },
+    {
+      "Group": "101-250",
+      "N": 4126,
+      "Mean_Eng": 62.165777993213766,
+      "Median_Eng": 2.0,
+      "Viral_Rate": 0.2714493456131847,
+      "Mean_Followers": 931575.510906447,
+      "Mean_Following": 618.2055259331071,
+      "Verified_Pct": 0.40475036354823074
+    },
+    {
+      "Group": "251-500",
+      "N": 2413,
+      "Mean_Eng": 44.300041442188146,
+      "Median_Eng": 0.0,
+      "Viral_Rate": 0.13675922088686282,
+      "Mean_Followers": 165709.20928305015,
+      "Mean_Following": 99.59303771239121,
+      "Verified_Pct": 0.1819312059676751
+    },
+    {
+      "Group": "501-1000",
+      "N": 3000,
+      "Mean_Eng": 0.3233333333333333,
+      "Median_Eng": 0.0,
+      "Viral_Rate": 0.0,
+      "Mean_Followers": 436.9603333333333,
+      "Mean_Following": 34.119,
+      "Verified_Pct": 0.0
+    },
+    {
+      "Group": "1001-2000",
+      "N": 5616,
+      "Mean_Eng": 0.2583689458689459,
+      "Median_Eng": 0.0,
+      "Viral_Rate": 0.0,
+      "Mean_Followers": 465.29059829059827,
+      "Mean_Following": 41.42254273504273,
+      "Verified_Pct": 0.0
+    },
+    {
+      "Group": "2001-5000",
+      "N": 7287,
+      "Mean_Eng": 0.09345409633594072,
+      "Median_Eng": 0.0,
+      "Viral_Rate": 0.0,
+      "Mean_Followers": 559.2099629477151,
+      "Mean_Following": 11.503499382461918,
+      "Verified_Pct": 0.0
+    },
+    {
+      "Group": "5000+",
+      "N": 8063,
+      "Mean_Eng": 0.07280168671710281,
+      "Median_Eng": 0.0,
+      "Viral_Rate": 0.0,
+      "Mean_Followers": 895.9692422175369,
+      "Mean_Following": 1.6108148331886394,
+      "Verified_Pct": 0.0
+    }
+  ],
+  "ood_stats": {
+    "user_followers": {
+      "Input": 450000,
+      "Median": 439.0,
+      "95th": 70116.0,
+      "99th": 2242341.0,
+      "Max": 15996753.0
+    },
+    "user_friends": {
+      "Input": 1500,
+      "Median": 251.0,
+      "95th": 4131.0,
+      "99th": 8879.140000000014,
+      "Max": 516578.0
+    },
+    "account_age_days": {
+      "Input": 3200,
+      "Median": 2089.0,
+      "95th": 4429.0,
+      "99th": 4706.0,
+      "Max": 5384.0
+    },
+    "prev_avg_engagement": {
+      "Input": 2500.0,
+      "Median": 0.017636278992057372,
+      "95th": 21.22035742035749,
+      "99th": 119.44713114754184,
+      "Max": 10181.5
+    },
+    "prev_tweet_count": {
+      "Input": 4500,
+      "Median": 1.0,
+      "95th": 5038.0,
+      "99th": 9896.579999999987,
+      "Max": 11494.0
+    }
+  }
+}
