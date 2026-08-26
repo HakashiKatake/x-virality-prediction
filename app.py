@@ -148,9 +148,9 @@ elif demo == 3:
     def_following = 1500
     def_verified = True
     def_age = 3200
-    def_prev_tweets = 4500
+    def_prev_tweets = 450
     def_prev_avg_eng = 2500.0
-    def_prev_viral = 1850
+    def_prev_viral = 185
 
 with st.form("prediction_form"):
     # SECTION A

@@ -36,3 +36,15 @@ python3 test_inference.py
 
 ## Limitations & Academic Disclaimer
 Academic demonstration only. The model was trained on COVID-19 vaccine-related tweets collected during 2020–2022 and should not be interpreted as a production predictor for current X recommendation or virality. The model accurately detects structural correlations from its dataset but lacks awareness of current world events and the current real-world X algorithm.
+
+## Model Diagnostics & Sensitivity Analysis
+A comprehensive diagnostic sensitivity analysis was performed on the trained `HistGradientBoostingClassifier` to understand its decision boundaries. The findings, documented in `model_sensitivity_analysis.md` and visually in the `diagnostics/` folder, revealed critical insights into how the model behaves on extreme inputs:
+
+1. **The "Bot / Spam" Penalty (Non-Monotonicity):** 
+   The model exhibits a sharp, non-monotonic decision boundary for the `prev_tweet_count` feature. Specifically, if an author's previous tweet count crosses **517 tweets**, the model's predicted virality permanently plunges to near-zero (0.83%), regardless of their follower count or historical engagement.
+   
+2. **Data-Driven Decision Making:** 
+   This threshold is not an error but a perfect mathematical reflection of the training data. Quantile analysis of the COVID-19 dataset shows that accounts with >500 tweets within the dataset's collection period had exactly a **0.00% viral rate**, <1000 average followers, and 0% verification. The decision trees successfully learned to identify and penalize this automated "news aggregator/bot" behavior.
+   
+3. **Using the Live Demo:** 
+   When testing the application, providing extremely high `prev_tweet_count` values (e.g., 4,500+) will force the model into the "bot" leaf nodes. For simulating high-engagement human influencers, keep previous tweet counts below 500 to stay within the appropriate data distribution.
